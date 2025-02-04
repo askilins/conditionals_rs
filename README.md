@@ -1,6 +1,6 @@
 Rust crate for aliasing bool operations
 
-```
+``` rust
 fn not (expr: bool) -> bool {
     !expr
 }
