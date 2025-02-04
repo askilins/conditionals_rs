@@ -30,7 +30,7 @@ In main.rs:
 use not_either_both::*;
 
 fn main () {
-    if not (false) {println!("Not")};
+    if not (false) {println!("Not")}
     if either (false, true) {println!("Either")}
     if both (true, true) {println!("Both")}
 }
