@@ -17,7 +17,7 @@ pub fn both (left: bool, right: bool) -> bool {
 }
 
 // Returns true, if all are true
-#[inline(always)]
+#[inline]
 pub fn all (list: &[bool]) -> bool {
     for condition in list {
         if not (*condition) {
@@ -29,7 +29,7 @@ pub fn all (list: &[bool]) -> bool {
 }
 
 // Returns true, if none are true
-#[inline(always)]
+#[inline]
 pub fn none (list: &[bool]) -> bool {
     for condition in list {
         if *condition {
@@ -41,7 +41,7 @@ pub fn none (list: &[bool]) -> bool {
 }
 
 // Returns true, if any are true
-#[inline(always)]
+#[inline]
 pub fn any (list: &[bool]) -> bool {
     for condition in list {
         if *condition {
