@@ -15,3 +15,39 @@ pub fn either (left: bool, right: bool) -> bool {
 pub fn both (left: bool, right: bool) -> bool {
     left && right
 }
+
+// Returns true, if all are true
+#[inline(always)]
+pub fn all (list: &[bool]) -> bool {
+    for condition in list {
+        if not (*condition) {
+            return false
+        }
+    }
+    
+    true
+}
+
+// Returns true, if none are true
+#[inline(always)]
+pub fn none (list: &[bool]) -> bool {
+    for condition in list {
+        if *condition {
+            return false
+        }
+    }
+    
+    true
+}
+
+// Returns true, if any are true
+#[inline(always)]
+pub fn any (list: &[bool]) -> bool {
+    for condition in list {
+        if *condition {
+            return true
+        }
+    }
+    
+    false
+}
