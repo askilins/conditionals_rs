@@ -1,4 +1,4 @@
-Rust crate for aliasing bool operations
+Rust crate for aliasing boolean operations
 
 It is recomened to fork the repo instead of using this one.
 ( or any other way of copy / paste )
