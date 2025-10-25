@@ -4,7 +4,7 @@ It is recomened to fork the repo instead of using this one.
 
 ### Usage
 
-## Crate Method
+#### Crate Method
 
 In Cargo.toml:
 ```toml
@@ -26,7 +26,7 @@ fn main () {
 }
 ```
 
-## Module Method
+#### Module Method
 
 Copy contents of this repo's `/src/lib.rs` into your projects `/src/not_either_both/mod.rs`
 
