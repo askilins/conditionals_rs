@@ -1,7 +1,7 @@
 // Returns true, if not false 
 #[inline]
-pub fn not (expr: bool) -> bool {
-    !expr
+pub fn not (condition: bool) -> bool {
+    !condition
 }
 
 // Returns true, if either left or right is true
