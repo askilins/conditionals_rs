@@ -8,12 +8,12 @@ It is recomened to fork the repo instead of using this one.
 In Cargo.toml:
 ```toml
 [dependencies]
-not_either_both = { git = "https://github.com/askilins/not_either_both_rs" }
+conditionals = { git = "https://github.com/askilins/conditionals_rs" }
 ```
 
 In main.rs:
 ```rust
-use not_either_both::*;
+use conditionals::*;
 
 fn main () {
     if not (false) {println!("Not")}
