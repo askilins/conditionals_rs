@@ -24,7 +24,6 @@ pub fn all (list: &[bool]) -> bool {
             return false
         }
     }
-    
     true
 }
 
@@ -36,7 +35,6 @@ pub fn none (list: &[bool]) -> bool {
             return false
         }
     }
-    
     true
 }
 
@@ -48,6 +46,5 @@ pub fn any (list: &[bool]) -> bool {
             return true
         }
     }
-    
     false
 }
