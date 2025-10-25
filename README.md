@@ -1,19 +1,5 @@
 Rust crate for aliasing bool operations
 
-``` rust
-fn not (expr: bool) -> bool {
-    !expr
-}
-
-fn either (left: bool, right: bool) -> bool {
-    left || right
-}
-
-fn both (left: bool, right: bool) -> bool {
-    left && right
-}
-```
-
 It is recomened to fork the repo instead of using this one.
 ( or any other way of copy / paste )
 
@@ -33,5 +19,8 @@ fn main () {
     if not (false) {println!("Not")}
     if either (false, true) {println!("Either")}
     if both (true, true) {println!("Both")}
+    if all (&[true, true, true]) {println!("All")}
+    if none (&[false, false, false]) {println!("None")}
+    if any (&[false, false, true]) {println!("Any")}
 }
 ```
